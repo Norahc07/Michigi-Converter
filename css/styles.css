@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px; /* Padding for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px; /* Maximum width for larger screens */
+    margin: 20px auto; /* Center container horizontally */
+    box-sizing: border-box; /* Include padding and border in total width and height */
+}
+
+.michigi {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.yvc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #DF37D6;
+}
+
+.converter input, .converter select {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #DF37D6;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+
+#convert-button {
+    background-color: #DF37D6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#convert-button:hover {
+    background-color: #BB2BAF;
+}
+
+.loading {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center; /* Center text and inline elements */
+}
+
+video {
+    width: 100%;
+    max-width: 500px; /* Limit the maximum width of the video */
+    margin: 0 auto; /* Center the video horizontally */
+    display: block; /* Ensure the video is treated as a block element */
+}
+
+#download-link {
+    display: inline-block; /* Treat the download link as an inline-block element */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #DF37D6;
+    color: white;
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#download-link:hover {
+    background-color: #BB2BAF;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    
+    .converter input, .converter select {
+        padding: 10px; /* Adjust padding for inputs/selects */
+    }
+
+    #convert-button {
+        padding: 8px 16px; /* Adjust padding for the button */
+    }
+
+    video {
+        max-width: 100%; /* Make video responsive */
+    }
+}

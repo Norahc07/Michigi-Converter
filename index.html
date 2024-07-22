@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="michigi">
+            <h1>Michigi</h1>
+        </div>
+
+        <div class="yvc">
+            <h1>YouTube Video Converter</h1>
+        </div>
+
+        <div class="converter">
+            <input type="text" id="video-url" placeholder="Enter YouTube URL">
+            <select id="format">
+                <option value="mp4">MP4</option>
+                <option value="mp3">MP3</option>
+            </select>
+        </div>
+
+        <div class="convert-btn">
+            <button id="convert-button">Convert</button>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">Loading...</div>
+
+        <div class="result" id="result" style="display: none;">
+            <video id="preview" controls style="display: none;"></video>
+            <a id="download-link" href="#" download>Download</a>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</html>
